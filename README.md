@@ -1,7 +1,5 @@
 # Horarios-de-aula
 
-# Horários de Aula
-
 API desenvolvida em **Node.js** com **Express** e **Sequelize (MYSQL)** para gerenciar horários de aulas de uma escola.  
 
 Permite consultar:
@@ -19,15 +17,7 @@ Permite consultar:
 - Express  
 - Sequelize (MYSQL)  
 - Swagger (documentação da API)  
-- Dotenv  
-
----
-
-## 🔗 Links do Projeto
-
-- Documentação Swagger: [INSIRA LINK AQUI]  
-
-> Não é necessário configurar banco localmente, todos os dados estão no SQLite incluído no projeto.  
+- Dotenv 
 
 ---
 
@@ -41,9 +31,6 @@ Principais tabelas:
 - **Building** – Prédios da escola  
 - **Room** – Salas  
 - **Subject** – Disciplinas  
-- **SubjectPrerequisite** – Pré-requisitos  
+- **SubjectPrerequisite** – Pré-requisitos 
 - **Class** – Turmas  
 - **ClassSchedule** – Horários das turmas  
-
-git clone [LINK_DO_REPOSITORIO]
-cd horarios-de-aula
