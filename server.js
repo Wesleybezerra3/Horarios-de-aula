@@ -18,7 +18,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:8081',
+        url: 'http://localhost:8081/v1',
       },
     ],
   },
@@ -29,8 +29,8 @@ const swaggerOptions = {
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 
 // Rota para acessar a doc do Swagger
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/v1', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-app.use('/', schoolRoutes );
+app.use('/school', schoolRoutes );
 
-app.listen(8081, () => console.log('Servidor rodando em http://localhost:8081/api-docs'));
+app.listen(8081, () => console.log('Servidor rodando em http://localhost:8081/v1'));
